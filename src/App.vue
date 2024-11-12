@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class="pageWrap">
     <AppHeader /> <!-- Header toujours visible -->
-    <main>
+    <main class="content">
       <router-view /> <!-- Contenu dynamique en fonction des routes -->
     </main>
     <AppFooter /> <!-- Footer toujours visible -->
@@ -11,11 +11,14 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+
 </script>
 
 <style>
+
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Grunf sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -41,8 +44,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
-  font-weight: bold;
+  font-style: italic;
   text-decoration: underline;
 }
 </style>
