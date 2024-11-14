@@ -1,34 +1,35 @@
 <template>
   <article id="AppPortefolio" class="AppPortefolio">
     <h2>Mes créations</h2>
+    <div class="creations-container">
+      <section class="cv" @click="openCarousel(cvProjet)">
+        <h3>CV</h3>
+        <a href="#">
+          <img src="../assets/Images/cv.png" alt="CV" class="creation" width="20%">
+        </a>
+      </section>
 
-    <section class="cv" @click="openCarousel(cvProjet)">
-      <h3>CV</h3>
-      <a href="#">
-        <img src="../assets/Images/cv.png" alt="CV" class="creation" width="20%">
-      </a>
-    </section>
+      <section class="dym" @click="openCarousel(dymProjet)">
+        <h3>Dynamiser un espace des commentaires</h3>
+        <a href="#">
+          <img src="../assets/Images/dynamiserUnEspaceCommentaires.png" alt="Espace commentaire" class="creation" width="20%">
+        </a>
+      </section>
 
-    <section class="dym" @click="openCarousel(dymProjet)">
-      <h3>Dynamiser un espace des commentaires</h3>
-      <a href="#">
-        <img src="../assets/Images/dynamiserUnEspaceCommentaires.png" alt="Espace commentaire" class="creation" width="20%">
-      </a>
-    </section>
+      <section class="space" @click="openCarousel(spaceProjet)">
+        <h3>My home space</h3>
+        <a href="#">
+          <img src="../assets/Images/myHomeSpace.png" alt="My home space" class="creation" width="20%">
+        </a>
+      </section>
 
-    <section class="space" @click="openCarousel(spaceProjet)">
-      <h3>My home space</h3>
-      <a href="#">
-        <img src="../assets/Images/myHomeSpace.png" alt="My home space" class="creation" width="20%">
-      </a>
-    </section>
-
-    <section class="charges" @click="openCarousel(chargesProjet)">
-      <h3>Cahier de charges</h3>
-      <a href="#">
-        <img src="../assets/Images/cahierDeCharges.png" alt="Cahier de charges" class="creation" width="20%">
-      </a>
-    </section>
+      <section class="charges" @click="openCarousel(chargesProjet)">
+        <h3>Cahier de charges</h3>
+        <a href="#">
+          <img src="../assets/Images/cahierDeCharges.png" alt="Cahier de charges" class="creation" width="20%">
+        </a>
+      </section>
+    </div>
 
     <!-- Modal -->
     <Modal v-if="showModal" :project="selectedProjet" @close="closeModal" />
@@ -99,6 +100,30 @@ const closeModal = () => {
   color: #00bd7e;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+
+.creations-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+section {
+  flex: 1 1 calc(25% - 20px); 
+  max-width: calc(25% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.creation {
+  transition: box-shadow 0.3s ease-out;
+}
+
+.creation:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .slider-container {
