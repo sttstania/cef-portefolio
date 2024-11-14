@@ -13,13 +13,13 @@
 <style>
   .home-view {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  gap: 15px;
-  min-height: 80vh; /* Pour centrer verticalement */
-  background-color: #f5f5f5; /* Une couleur de fond douce */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 15px;
+    min-height: 80vh; /* centrer verticalement */
+    background-color: #f5f5f5; 
   }
 </style>

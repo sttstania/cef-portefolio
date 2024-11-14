@@ -15,10 +15,8 @@ import AppFooter from './components/AppFooter.vue';
 </script>
 
 <style>
-
-
 #app {
-  font-family: Grunf sans-serif;
+  font-family: "Grunf", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -47,4 +45,5 @@ nav a.router-link-exact-active {
   font-style: italic;
   text-decoration: underline;
 }
+
 </style>

@@ -5,27 +5,28 @@ import HomeView from "../views/HomeView.vue";
 import AppAboutMe from "../components/AppAboutMe.vue";
 import AppPortefolio from "../components/AppPortefolio.vue";
 import AppContact from "../components/AppContact.vue";
+import HomeNotFound from "@/views/HomeNotFound.vue";
 
 const routes = [
   {
     path: "/",
-    component: HomeView, // Affiche une page d'accueil ou vide
+    component: HomeView,
   },
   {
     path: "/AppAboutMe",
-    component: AppAboutMe, // Affiche le composant Présentation
+    component: AppAboutMe, 
   },
   {
     path: "/AppPortefolio",
-    component: AppPortefolio, // Affiche le composant Portfolio
+    component: AppPortefolio, 
   },
   {
     path: "/AppContact",
-    component: AppContact, // Affiche le composant Contact
+    component: AppContact, 
   },
   {
     path: "/:catchAll(.*)",
-    redirect: "/", // Redirige toutes les routes non trouvées vers l'accueil
+    component: HomeNotFound,
   },
 ];
 
