@@ -32,9 +32,10 @@
     </div>
 
     <!-- Modal -->
-    <Modal v-if="showModal" :project="selectedProjet" @close="closeModal" />
+    <Modal v-if="showModal" :project="selectedProjet" :show="showModal" @close="closeModal" />
   </article>
 </template>
+
 
 <script setup>
 import { ref } from 'vue';
@@ -106,16 +107,20 @@ const closeModal = () => {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 section {
-  flex: 1 1 calc(5% - 20px); 
-  max-width: calc(25% - 10px);
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
   box-sizing: border-box;
   text-align: center;
   padding: 10px;
   transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.05);
 }
 
 .creation {
