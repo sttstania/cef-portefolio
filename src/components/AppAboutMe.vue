@@ -1,17 +1,19 @@
 <template>
   <section id="AppAboutMe" class="AppAboutMe">
-    <h2>Présentation</h2>
+    <h2>Bienvenue dans mon portfolio!</h2>
     <p>
-      Pendant plus de 15 ans, j'ai été infirmière, exerçant dans des contextes divers : ambulances, soins à domicile, blocs opératoires, centres de réhabilitation, chirurgie, laboratoires… et ce, au Portugal, en Angola, en France, et en Belgique. Comme beaucoup, à 18 ans, j'ai suivi la voie suggérée par mes parents sans vraiment savoir où je voulais aller. Année après année, j'ai affronté des défis humains, des conditions de travail exigeantes et un système sous pression constante. Progressivement, j'ai perdu la flamme et ne me reconnaissais plus.
+    <p>
+      Je suis ravie de vous accueillir ici pour partager un peu de mon histoire, de mon parcours et de ce qui m'anime aujourd'hui.
     </p>
+      Pendant plus de 15 ans, j'ai été infirmière. J'ai exercé dans des environnements variés : ambulances, soins à domicile, blocs opératoires, centres de réhabilitation, services de chirurgie et laboratoires. Mon métier m'a menée dans plusieurs pays, du Portugal à l'Angola, en passant par la France et la Belgique. À l'âge de 18 ans, j'avais suivi le chemin que mes parents imaginaient pour moi, sans vraiment savoir ce que je voulais. Au fil des années, j'ai fait face à de nombreux défis humains, à des conditions de travail exigeantes et à un système souvent sous pression. Peu à peu, j'ai senti ma flamme vaciller, jusqu'à ne plus me reconnaître dans ce métier que j'avais tant donné.</p>
     <p>
-      Le COVID-19 a marqué un tournant. L'épuisement professionnel s'est intensifié et la naissance de mes enfants m'a ouvert les yeux. J'avais besoin de changement, de retrouver du sens et de m'épanouir à nouveau. C’est là que j'ai choisi de me réinventer et de suivre une passion qui m'a toujours habitée : les mathématiques, la logique, et la résolution de problèmes. Le développement web m’est apparu comme une évidence, un terrain où les défis et la créativité se rencontrent.
-    </p>
+      La pandémie de COVID-19 a été un électrochoc. L'épuisement professionnel m'a rattrapée et, avec la naissance de mes enfants, j'ai compris qu'il me fallait changer, retrouver du sens, et m’épanouir à nouveau. C’est alors que j'ai décidé de suivre une passion qui m'avait toujours habitée : les mathématiques, la logique et la résolution de problèmes. Le développement web m'est apparu comme une évidence, un domaine où je pouvais marier créativité et réflexion, relever de nouveaux défis et donner vie à des projets concrets.    </p>
     <p>
-      Changer de carrière après tant d'années en santé n’a pas été simple. Il a fallu "reprogrammer" ma façon de penser, quitter un monde centré sur le soin pour entrer dans celui du numérique et du code. Mais c’est ce défi que j'aime. Aujourd'hui, chaque ligne de code est un problème à résoudre, chaque projet une nouvelle opportunité d’innover et de créer. Le développement web est bien plus qu’un métier : c’est ma nouvelle passion, celle qui me pousse à apprendre, à m'améliorer, et à relever chaque défi.
-    </p>
+      Changer de carrière après tant d'années dans le milieu de la santé n'a pas été une transition facile. Il m'a fallu "reprogrammer" ma façon de penser, de soigner des personnes à coder des solutions numériques. Mais c’est justement ce défi qui me stimule. Chaque ligne de code que j'écris est une énigme à résoudre, chaque projet est une nouvelle opportunité d'apprendre, d'innover et de créer. Le développement web est bien plus qu'un nouveau métier : c'est une passion qui me pousse à me dépasser, à me réinventer et à voir le monde avec un regard neuf.    </p>
     <p>
-      Actuellement en formation au Centre Européen de Formation, je construis ma nouvelle vie professionnelle avec détermination et enthousiasme. J’ai troqué l'accompagnement des patients pour la création de solutions digitales. Je mets la même attention, la même rigueur et le même désir de faire la différence dans ce que je construis en tant que développeuse web. Mon parcours est un chemin de transformation et de renaissance que je poursuis avec passion.
+      Aujourd'hui, je construis ce nouveau chapitre de ma vie avec la même détermination et la même rigueur que dans mon ancienne carrière. J'ai troqué le soin des patients pour la création de solutions numériques, mais mon désir de faire la différence reste intact. Ce portfolio est une invitation à découvrir ce qui me motive, ce qui me passionne et comment je mets tout mon cœur dans ce que je fais en tant que développeuse web.    </p>
+    <p>
+      Merci de prendre le temps de me connaître. Je vous souhaite une belle découverte !
     </p>
   </section>
 </template>

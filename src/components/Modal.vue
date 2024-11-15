@@ -20,9 +20,6 @@
             <div>
               <a :href="project.link" target="_blank">Visiter le projet</a>
             </div>
-            <div v-if="project.github">
-              <a :href="project.github" target="_blank">Voir le code sur GitHub</a>
-            </div>
           </div>
         </div>
       </div>

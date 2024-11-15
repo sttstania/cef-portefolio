@@ -2,6 +2,7 @@
   <div id="app" class="pageWrap">
     <AppHeader /> <!-- Header toujours visible -->
     <main class="content">
+      <Modal v-if="isModalOpen" />
       <router-view /> <!-- Contenu dynamique en fonction des routes -->
     </main>
     <AppFooter /> <!-- Footer toujours visible -->
@@ -11,12 +12,19 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+import Modal from './components/Modal.vue';
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute(); //acces a la route actuelle
+
+const isModalOpen = computed(() => route.query.modal === 'true' );
 
 </script>
 
 <style>
 #app {
-  font-family: "Grunf", sans-serif;
+  font-family: "", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

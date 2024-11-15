@@ -8,26 +8,11 @@ import AppContact from "../components/AppContact.vue";
 import HomeNotFound from "@/views/HomeNotFound.vue";
 
 const routes = [
-  {
-    path: "/",
-    component: HomeView,
-  },
-  {
-    path: "/AppAboutMe",
-    component: AppAboutMe, 
-  },
-  {
-    path: "/AppPortefolio",
-    component: AppPortefolio, 
-  },
-  {
-    path: "/AppContact",
-    component: AppContact, 
-  },
-  {
-    path: "/:catchAll(.*)",
-    component: HomeNotFound,
-  },
+  { path: "/", component: HomeView },
+  { path: "/AppAboutMe", component: AppAboutMe },
+  { path: "/AppPortefolio", component: AppPortefolio },
+  { path: "/AppContact", component: AppContact },
+  { path: "/:pathMatch(.*)", name: 'HomeNotFound', component: HomeNotFound },
 ];
 
 const router = createRouter({
