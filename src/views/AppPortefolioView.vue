@@ -61,7 +61,7 @@ const chargesProject = {
   title: 'Cahier de charges',
   date: '02-04-2024',
   technologies: ['Microssoft Office Word'],
-  link: './src/assets/Dossier/CahierDeCharges.pdf',
+  link: './src/assets/Dossier/CahierDeChargesTRP.pdf',
   images: './src/assets/Images/cahierDeCharges.png',
 };
 
