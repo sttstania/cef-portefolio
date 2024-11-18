@@ -147,29 +147,4 @@ const closeModal = () =>{
   color: #045718;
 }
 
-.control-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #00bd7e;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.control-button:hover {
-  background: #045718;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
 </style>

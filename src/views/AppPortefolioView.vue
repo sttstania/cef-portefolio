@@ -113,6 +113,7 @@ section {
 
 section:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .creation {
@@ -123,71 +124,4 @@ section:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.slider-container {
-  overflow: hidden;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  flex: 0 0 100%;
-  max-width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-
-.slide h3 {
-  font-size: 1.5rem;
-  color: #51ff00;
-  margin-bottom: 0.5rem;
-}
-
-.slide a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.slide img {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  width: 80%;
-  height: auto;
-  margin-top: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Controls for the slider */
-
-.control-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #00bd7e;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.control-button:hover {
-  background: #045718;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
 </style>
