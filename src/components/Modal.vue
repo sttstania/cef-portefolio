@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show" class="modal-component" @click.self="closeModal">
+  <div v-if="show" class="modal-component" @click.self="$emit('close')">
     <div class="modal">
       <button class="close-button" @click="$emit('close')">X</button>
       <div class="modal-content">
@@ -56,6 +56,7 @@ const currentImage = computed(() => {
 // };
 const closeModal = () =>{
   props.show = false;
+  $emit('close');
 }
 </script>
 
