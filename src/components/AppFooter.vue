@@ -5,7 +5,7 @@
           <img src="../assets/Images/github.png" alt="GitHubLogo"> 
         </a>
       </div>
-      <p>&copy; 2024 Mon Portfolio</p>
+      <p>&copy; 2024 Mon Portefolio - TRP</p>
       <p>Dernière mise a jour le {{ lastUpdatedDate }}</p>
     </footer>
   </template>
