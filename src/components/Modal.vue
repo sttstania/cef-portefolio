@@ -1,12 +1,12 @@
 <template>
-  <div v-if="show" class="modal-component">
+  <div v-if="show" class="modal-component" @click.self="closeModal">
     <div class="modal">
       <button class="close-button" @click="$emit('close')">X</button>
       <div class="modal-content">
         <div class="carousel">
-          <img :src="currentImage" :alt="project.title" />
-          <button class="control-button prev" @click="prevImage">Prev</button>
-          <button class="control-button next" @click="nextImage">Next</button>
+          <img :src="project.images" :alt="project.title" />
+          <!-- <button class="control-button prev" @click="prevImage">Prev</button>
+          <button class="control-button next" @click="nextImage">Next</button> -->
         </div>
         <div class="modal-text">
           <h3>{{ project.title }}</h3>
@@ -18,7 +18,7 @@
             </ul>
           </div>
           <div>
-            <a :href="project.link" target="_blank">Visiter le projet</a>
+            <a :href="project.link" target="_blank">Visiter le projet</a>          
           </div>
         </div>
       </div>
@@ -40,19 +40,23 @@ const props = defineProps({
   },
 });
 
-const currentIndex = ref(0);
+// const currentIndex = ref(0);
 
 const currentImage = computed(() => {
-  return props.project.images[currentIndex.value];
+  return props.project.images.value;
 });
 
-const prevImage = () => {
-  currentIndex.value = (currentIndex.value - 1 + props.project.images.length) % props.project.images.length;
-};
+// pour carousel à faire dans le future
+// const prevImage = () => {
+//   currentIndex.value = (currentIndex.value - 1 + props.project.images.length) % props.project.images.length;
+// };
 
-const nextImage = () => {
-  currentIndex.value = (currentIndex.value + 1) % props.project.images.length;
-};
+// const nextImage = () => {
+//   currentIndex.value = (currentIndex.value + 1) % props.project.images.length;
+// };
+const closeModal = () =>{
+  props.show = false;
+}
 </script>
 
 <style scoped>
@@ -90,18 +94,22 @@ const nextImage = () => {
 
 .modal-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .modal-content img {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 auto;
+  width: 45%;
+  max-width: 45%;
   height: auto;
   margin-right: 20px;
+  object-fit: cover;
 }
 
 .modal-text {
-  flex: 0 0 50%;
+  flex: 1 1 auto;
   max-width: 50%;
 }
 

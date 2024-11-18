@@ -2,87 +2,79 @@
   <article id="AppPortefolio" class="AppPortefolio">
     <h2>Mes créations</h2>
     <div class="creations-container">
-      <section class="cv" @click="openCarousel(cvProjet)">
+      <section class="cv" @click="openModal(cvProject)">
         <h3>CV</h3>
-        <a href="#">
-          <img src="../assets/Images/cv.png" alt="CV" class="creation" width="20%">
-        </a>
+          <img :src="cvProject.images" alt="CV" class="creation" width="20%">
       </section>
 
-      <section class="dym" @click="openCarousel(dymProjet)">
+      <section class="dym" @click="openModal(dymProject)">
         <h3>Dynamiser un espace des commentaires</h3>
-        <a href="#">
-          <img src="../assets/Images/dynamiserUnEspaceCommentaires.png" alt="Espace commentaire" class="creation" width="20%">
-        </a>
+          <img :src="dymProject.images" alt="Espace commentaire" class="creation" width="20%">
       </section>
 
-      <section class="space" @click="openCarousel(spaceProjet)">
+      <section class="space" @click="openModal(spaceProject)">
         <h3>My home space</h3>
-        <a href="#">
-          <img src="../assets/Images/myHomeSpace.png" alt="My home space" class="creation" width="20%">
-        </a>
+          <img :src="spaceProject.images" alt="My home space" class="creation" width="20%">
       </section>
 
-      <section class="charges" @click="openCarousel(chargesProjet)">
+      <section class="charges" @click="openModal(chargesProject)">
         <h3>Cahier de charges</h3>
-        <a href="#">
-          <img src="../assets/Images/cahierDeCharges.png" alt="Cahier de charges" class="creation" width="20%">
-        </a>
+          <img :src="chargesProject.images" alt="Cahier de charges" class="creation" width="20%">
       </section>
     </div>
 
     <!-- Modal -->
-    <Modal v-if="showModal" :project="selectedProjet" :show="showModal" @close="closeModal" />
+    <Modal v-if="showModal" :project="selectedProject" :show="showModal" @close="closeModal" />
   </article>
 </template>
 
 
 <script setup>
 import { ref } from 'vue';
-import Modal from './Modal.vue';
+import Modal from '../components/Modal.vue';
 
-const cvProjet = {
+const cvProject = {
   title: 'CV',
   date: '27-02-2024',
   technologies: ['HTML', 'CSS3'],
   link: 'https://github.com/sttstania/cv.rp.git',
-  images: ['../assets/Images/cv.png', '../assets/Images/cv1.png', '../assets/Images/cv2.png', '../assets/Images/cv3.png'],
+  images: './src/assets/Images/cv.png', 
 };
 
-const dymProjet = {
+const dymProject = {
   title: 'Dynamiser un espace des commentaires',
   date: '27-02-2024',
   technologies: ['HTML', 'CSS3'],
   link: 'https://github.com/sttstania/DynamiserUnEspaceDeCommentaires.git',
-  images: ['../assets/Images/dynamiserUnEspaceCommentaires.png', '../assets/Images/dynamiserUnEspaceCommentaires1.png', '../assets/Images/dynamiserUnEspaceCommentaires2.png', '../assets/Images/dynamiserUnEspaceCommentaires3.png'],
+  images: './src/assets/Images/dynamiserUnEspaceCommentaires.png', 
 };
 
-const spaceProjet = {
+const spaceProject = {
   title: 'My home space',
   date: '27-02-2024',
   technologies: ['HTML', 'CSS3'],
   link: 'https://github.com/sttstania/myhomespace.git',
-  images: ['../assets/Images/myHomeSpace.png', '../assets/Images/myHomeSpace1.png'],
+  images: './src/assets/Images/myHomeSpace.png',
 };
 
-const chargesProjet = {
+const chargesProject = {
   title: 'Cahier de charges',
   date: '27-02-2024',
   technologies: ['HTML', 'CSS3'],
-  link: '../assets/Dossier/CahierDeCharges.pdf',
-  images: ['../assets/Images/cahierDeCharges.png'],
+  link: './src/assets/Dossier/CahierDeCharges.pdf',
+  images: './src/assets/Images/cahierDeCharges.png',
 };
 
-const selectedProjet = ref(null);
+const selectedProject = ref(null);
 const showModal = ref(false);
 
-const openCarousel = (projet) => {
-  selectedProjet.value = projet;
+const openModal = (project) => {
+  selectedProject.value = project;
   showModal.value = true;
 };
 
 const closeModal = () => {
-  selectedProjet.value = null;
+  selectedProject.value = null;
   showModal.value = false;
 };
 </script>
