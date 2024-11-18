@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // Importer les composants de vue
 import HomeView from "../views/HomeView.vue";
-import AppAboutMe from "../components/AppAboutMe.vue";
-import AppPortefolio from "../components/AppPortefolio.vue";
-import AppContact from "../components/AppContact.vue";
-import HomeNotFound from "@/views/HomeNotFound.vue";
+import AppAboutMe from "../views/AppAboutMeView.vue";
+import AppPortefolio from "../views/AppPortefolioView.vue";
+import AppContact from "../views/AppContactView.vue";
+import HomeNotFound from "@/views/HomeNotFoundView.vue";
 import Modal from "@/components/Modal.vue";
 
 const routes = [
@@ -13,10 +13,10 @@ const routes = [
   { path: "/AppAboutMe", component: AppAboutMe },
   { path: "/AppPortefolio", component: AppPortefolio },
   { path: "/AppContact", component: AppContact },
-  { path: "/Modal", component: Modal }, 
+  { path: "/Modal", component: Modal },
   {
     path: "/:pathMatch(.*)*",
-    name: 'HomeNotFound',
+    name: "HomeNotFound",
     component: HomeNotFound,
   },
 ];
