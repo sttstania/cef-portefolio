@@ -43,7 +43,7 @@ const cvProject = {
 
 const dymProject = {
   title: 'Dynamiser un espace des commentaires',
-  date: '27-02-2024',
+  date: '28-05-2024',
   technologies: ['HTML', 'CSS3'],
   link: 'https://github.com/sttstania/DynamiserUnEspaceDeCommentaires.git',
   images: './src/assets/Images/dynamiserUnEspaceCommentaires.png', 
@@ -51,7 +51,7 @@ const dymProject = {
 
 const spaceProject = {
   title: 'My home space',
-  date: '27-02-2024',
+  date: '01-03-2024',
   technologies: ['HTML', 'CSS3'],
   link: 'https://github.com/sttstania/myhomespace.git',
   images: './src/assets/Images/myHomeSpace.png',
@@ -59,8 +59,8 @@ const spaceProject = {
 
 const chargesProject = {
   title: 'Cahier de charges',
-  date: '27-02-2024',
-  technologies: ['HTML', 'CSS3'],
+  date: '02-04-2024',
+  technologies: ['Microssoft Office Word'],
   link: './src/assets/Dossier/CahierDeCharges.pdf',
   images: './src/assets/Images/cahierDeCharges.png',
 };
