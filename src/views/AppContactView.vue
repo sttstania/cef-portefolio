@@ -66,8 +66,11 @@
 
 #contact h2 {
   text-align: center;
+  font-size: 1.8rem;
   color: #00bd7e;
-  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
@@ -81,11 +84,11 @@
   margin-right: 1rem;
   font-weight: bold;
   color: #333;
-  min-width: 80px; /* Aligne les labels */
+  min-width: 80px;       /* Aligne les labels */
 }
 
 .form-component.flex {
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .form-field {
@@ -100,7 +103,7 @@
   width: 100%;
   padding: 10px;
   border: 1px solid #e0e0e0;
-  border-radius: 4px;
+  border-radius: 7px;
   font-size: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -123,7 +126,7 @@ button[type="submit"] {
   padding: 10px;
   background-color: #00bd7e;
   border: none;
-  border-radius: 4px;
+  border-radius: 7px;
   color: white;
   font-size: 1rem;
   font-weight: bold;

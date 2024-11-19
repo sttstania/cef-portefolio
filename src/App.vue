@@ -31,13 +31,6 @@ const isModalOpen = computed(() => route.query.modal === 'true' );
   color: #2c3e50;
 }
 
-.main-image { 
-  display: block;
-  width: 40%;
-  height: auto;
-  margin: 30px 0;
-}
-
 nav {
   padding: 30px;
   background-color: #42b983;

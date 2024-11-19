@@ -31,7 +31,7 @@
   padding: 1.2rem;
   margin: 1.5rem auto;
   max-width: 70%;
-  background-color: #ffffff;
+  background-color: #fffdfda2;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   font-family: 'Roboto', sans-serif;
@@ -43,7 +43,7 @@
 #AppAboutMe h2 {
   font-size: 1.8rem;
   color: #00bd7e;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
 }
@@ -54,16 +54,7 @@
   color: #555;
 }
 
-#AppAboutMe a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-#AppAboutMe a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   #AppAboutMe {
     padding: 1rem;
   }

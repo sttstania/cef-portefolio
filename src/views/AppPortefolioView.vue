@@ -4,22 +4,22 @@
     <div class="creations-container">
       <section class="cv" @click="openModal(cvProject)">
         <h3>CV</h3>
-          <img :src="cvProject.images" alt="CV" class="creation" width="20%">
+          <img :src="cvProject.images" alt="CV" class="creation" width="40%">
       </section>
 
       <section class="dym" @click="openModal(dymProject)">
         <h3>Dynamiser un espace des commentaires</h3>
-          <img :src="dymProject.images" alt="Espace commentaire" class="creation" width="20%">
+          <img :src="dymProject.images" alt="Espace commentaire" class="creation" width="40%">
       </section>
 
       <section class="space" @click="openModal(spaceProject)">
         <h3>My home space</h3>
-          <img :src="spaceProject.images" alt="My home space" class="creation" width="20%">
+          <img :src="spaceProject.images" alt="My home space" class="creation" width="40%">
       </section>
 
       <section class="charges" @click="openModal(chargesProject)">
         <h3>Cahier de charges</h3>
-          <img :src="chargesProject.images" alt="Cahier de charges" class="creation" width="20%">
+          <img :src="chargesProject.images" alt="Cahier de charges" class="creation" width="40%">
       </section>
     </div>
 
@@ -91,8 +91,9 @@ const closeModal = () => {
 #AppPortefolio h2 {
   text-align: center;
   color: #00bd7e;
-  font-size: 2rem;
   margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .creations-container {
@@ -113,6 +114,7 @@ section {
 
 section:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .creation {
@@ -123,71 +125,4 @@ section:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.slider-container {
-  overflow: hidden;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  flex: 0 0 100%;
-  max-width: 100%;
-  text-align: center;
-  padding: 10px;
-}
-
-.slide h3 {
-  font-size: 1.5rem;
-  color: #51ff00;
-  margin-bottom: 0.5rem;
-}
-
-.slide a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.slide img {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  width: 80%;
-  height: auto;
-  margin-top: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Controls for the slider */
-
-.control-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #00bd7e;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.control-button:hover {
-  background: #045718;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
 </style>
