@@ -16,7 +16,7 @@ const routes = [
   { path: "/Modal", component: Modal },
   {
     path: "/:pathMatch(.*)*",
-    name: "HomeNotFound",
+    name: "homenotfound",
     component: HomeNotFound,
   },
 ];

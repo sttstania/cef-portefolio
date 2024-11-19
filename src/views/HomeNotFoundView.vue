@@ -17,6 +17,5 @@
   justify-content: center;
   text-align: center;
   min-height: 80vh;
-  padding: 20px;
 }
 </style>

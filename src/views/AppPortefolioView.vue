@@ -4,22 +4,22 @@
     <div class="creations-container">
       <section class="cv" @click="openModal(cvProject)">
         <h3>CV</h3>
-          <img :src="cvProject.images" alt="CV" class="creation" width="20%">
+          <img :src="cvProject.images" alt="CV" class="creation" width="40%">
       </section>
 
       <section class="dym" @click="openModal(dymProject)">
         <h3>Dynamiser un espace des commentaires</h3>
-          <img :src="dymProject.images" alt="Espace commentaire" class="creation" width="20%">
+          <img :src="dymProject.images" alt="Espace commentaire" class="creation" width="40%">
       </section>
 
       <section class="space" @click="openModal(spaceProject)">
         <h3>My home space</h3>
-          <img :src="spaceProject.images" alt="My home space" class="creation" width="20%">
+          <img :src="spaceProject.images" alt="My home space" class="creation" width="40%">
       </section>
 
       <section class="charges" @click="openModal(chargesProject)">
         <h3>Cahier de charges</h3>
-          <img :src="chargesProject.images" alt="Cahier de charges" class="creation" width="20%">
+          <img :src="chargesProject.images" alt="Cahier de charges" class="creation" width="40%">
       </section>
     </div>
 
@@ -91,8 +91,9 @@ const closeModal = () => {
 #AppPortefolio h2 {
   text-align: center;
   color: #00bd7e;
-  font-size: 2rem;
   margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .creations-container {

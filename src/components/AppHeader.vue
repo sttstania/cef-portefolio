@@ -28,6 +28,11 @@
         margin-left: 80px;;
     }
 
+    .logo img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
     nav ul {
         display: flex;
         list-style: none;

@@ -5,6 +5,7 @@
       <div class="modal-content">
         <div class="carousel">
           <img :src="project.images" :alt="project.title" />
+          <!-- future utilisation, mise en place carousel -->
           <!-- <button class="control-button prev" @click="prevImage">Prev</button>
           <button class="control-button next" @click="nextImage">Next</button> -->
         </div>
@@ -46,7 +47,7 @@ const currentImage = computed(() => {
   return props.project.images.value;
 });
 
-// pour carousel à faire dans le future
+// future utilisation, mise en place carousel
 // const prevImage = () => {
 //   currentIndex.value = (currentIndex.value - 1 + props.project.images.length) % props.project.images.length;
 // };
@@ -102,7 +103,7 @@ const closeModal = () =>{
 
 .modal-content img {
   flex: 0 0 auto;
-  width: 45%;
+  width: 60%;
   max-width: 45%;
   height: auto;
   margin-right: 20px;

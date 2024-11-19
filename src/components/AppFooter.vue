@@ -29,5 +29,10 @@ const lastUpdatedDate = ref(new Date().toLocaleDateString());
     width: 40px;
   }
 
+  div a img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
 </style>
   
