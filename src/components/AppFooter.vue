@@ -33,6 +33,5 @@ const lastUpdatedDate = ref(new Date().toLocaleDateString());
     transform: scale(1.2);
     cursor: pointer;
   }
-
 </style>
   

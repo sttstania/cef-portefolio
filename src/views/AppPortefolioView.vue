@@ -124,5 +124,4 @@ section:hover {
 .creation:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
-
 </style>
