@@ -51,6 +51,4 @@
     nav a:hover {
         color: #00ffbf;
     }
-
-
 </style>

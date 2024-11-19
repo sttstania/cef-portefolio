@@ -96,7 +96,7 @@ const closeModal = () =>{
 
 .modal-content {
   display: flex;
-  flex-wrap: row;
+  flex-direction: row;
   align-items: flex-start;
   flex-wrap: nowrap;
 }
@@ -147,5 +147,4 @@ const closeModal = () =>{
 .modal-text a:hover {
   color: #045718;
 }
-
 </style>
